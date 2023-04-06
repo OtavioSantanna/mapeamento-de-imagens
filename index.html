@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>MAPA</title>
+</head>
+<body onmousemove="MoveBoneco(event);">
+
+    <map name="meu_mapa">
+        <area shape="circle" coords="260, 440, 20" href="https://www.canva.com/design/DAFdvssC3E8/sYG1zhNsOf1MMYAVqvWXVg/edit?utm_content=DAFdvssC3E8&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+        <area shape="circle" coords="294, 411, 20" href="https://docs.google.com/presentation/d/1e-S1OTSzBtauwb5r2W3hGBy14h_07-qbIvx42kuHQvE/edit?usp=sharing">
+        <area shape="circle" coords="278, 379, 20" href="https://pt.wikipedia.org/wiki/Parana">
+        <area shape="circle" coords="313, 350, 20" href="https://pt.wikipedia.org/wiki/Sao_paulo">
+        <area shape="circle" coords="240, 325, 20" href="https://pt.wikipedia.org/wiki/Mato_Grosso_do_Sul">
+        <area shape="circle" coords="300, 275, 20" href="https://pt.wikipedia.org/wiki/Goi%C3%A1s">
+        <area shape="circle" coords="360, 315, 30" href="https://www.canva.com/design/DAFdvrwwWcg/A6CFUj0S_M8H1dxYI0Ujkw/view?utm_content=DAFdvrwwWcg&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink">
+        <area shape="circle" coords="380, 350, 10" href="https://www.canva.com/design/DAFdFtrurss/AdqRsmcale5EZIiVBPrYgw/edit?utm_content=DAFdFtrurss&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+        <area shape="circle" coords="407, 320, 10" href="https://www.es.gov.br/">
+        <area shape="circle" coords="395, 226, 40" href="https://www.canva.com/design/DAFdFnrqQEE/6ZSjkCEVWzhctFWV9w7dkw/edit?analyticsCorrelationId=b0e39376-d20f-44ed-aace-5943c17dd342">
+        <area shape="circle" coords="230, 230, 40" href="https://pt.wikipedia.org/wiki/Mato_Grosso">
+        <area shape="circle" coords="135, 209, 20" href="https://pt.wikipedia.org/wiki/Rondonia">
+        <area shape="circle" coords="320, 195, 20" href="https://pt.wikipedia.org/wiki/Tocantins">
+        <area shape="circle" coords="360, 134, 20" href="https://pt.wikipedia.org/wiki/Maranh%C3%A3o">
+        <area shape="circle" coords="390, 168, 20" href="https://www.google.com/search?q=piaui&rlz=1C1GCEU_pt-BRBR1044BR1044&oq=piaui&aqs=chrome.0.0i355i512j46i340i512j0i512l8.1151j0j7&sourceid=chrome&ie=UTF-8">
+        <area shape="circle" coords="430, 137, 20" href="https://www.google.com/search?q=ceara&rlz=1C1GCEU_pt-BRBR1044BR1044&oq=ceara&aqs=chrome..69i57j46i340i512j0i512j46i340i512l2j0i512l5.831j0j7&sourceid=chrome&ie=UTF-8">
+        <area shape="circle" coords="264, 130, 50" href="https://www.google.com/search?q=para&rlz=1C1GCEU_pt-BRBR1044BR1044&oq=para&aqs=chrome..69i57j69i59l3j69i60l2j69i61.351j0j7&sourceid=chrome&ie=UTF-8">
+        <area shape="circle" coords="120, 127, 50" href="https://www.canva.com/design/DAFdNgLCaXI/n0q2qGlmoNGsuLv_vttG8g/edit?utm_content=DAFdNgLCaXI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton">
+        <area shape="circle" coords="160, 46, 20" href="https://pt.wikipedia.org/wiki/Roraima">
+        <area shape="circle" coords="278, 52, 15" href="https://pt.wikipedia.org/wiki/Roraima">
+
+    </map>
+
+    <img id="BRASIL" src="mapa_brasil.jpg" usemap="#meu_mapa">
+    
+    <img class="boneco" id="boneco" src="boneco.gif">
+</body>
+<script>
+    function MoveBoneco(event) 
+    {
+        x = event.pageX;
+        y = event.pageY;
+        boneco.style.left = (x+2) + "px";
+        boneco.style.top = (y+2) + "px";
+
+    }
+</script>
+</html>

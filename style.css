@@ -1,0 +1,22 @@
+body {
+    cursor: none;
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    position: relative;
+} 
+
+.boneco {
+    width: 5%;
+    display: flex;
+    position: absolute;
+    bottom: 200px;
+    left: 500px;
+}
